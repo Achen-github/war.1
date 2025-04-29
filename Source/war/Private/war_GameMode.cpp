@@ -94,7 +94,7 @@ void Awar_GameMode::ChoosePlayerAndStartGame()
     Awar_HumanPlayer* HumanPlayer = Cast<Awar_HumanPlayer>(Players[CurrentPlayer]);
     if (HumanPlayer)
     {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Seleziona un'unità da piazzare!"));
+        // GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Seleziona un'unità da piazzare!"));
         return; // Aspetta la selezione prima di continuare
     }
 
@@ -118,7 +118,7 @@ void Awar_GameMode::PlaceUnit(const FVector& SpawnPosition)
 	{
 		if (!SelectedUnitClass)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Nessuna unità selezionata!"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Nessuna unità selezionata!"));
 			return;
 		}
 		UnitClass = SelectedUnitClass;
