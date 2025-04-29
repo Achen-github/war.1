@@ -186,7 +186,7 @@ void Awar_GameMode::PlaceUnit(const FVector& SpawnPosition)
 	if (UnitsPlaced >= 4) // Setup completo
 	{
 		bSetupPhase = false;
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Iniziamo il gioco!"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Iniziamo il gioco!"));
 		UE_LOG(LogTemp, Warning, TEXT("Finito il piazzamento delle unità"));
 		GameInstance->UpdateUnitStatsText();
 	}
