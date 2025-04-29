@@ -1,0 +1,1 @@
+- Se non riesci ad avviare da Visual Studio, ovvero ti da errore del debug, imposta il progetto come progetto d'avvio
