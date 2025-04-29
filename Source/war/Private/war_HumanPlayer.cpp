@@ -66,19 +66,19 @@ void Awar_HumanPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 void Awar_HumanPlayer::OnTurn()
 {
 	IsMyTurn = true;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Your Turn"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Your Turn"));
 	GameInstance->SetTurnMessage(TEXT("Human Turn"));
 }
 
 void Awar_HumanPlayer::OnWin()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Win!"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Win!"));
 	GameInstance->SetEndMessage(TEXT("You Won!"));
 }
 
 void Awar_HumanPlayer::OnLose()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Lose!"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Lose!"));
 	GameInstance->SetEndMessage(TEXT("You Lost!"));
 }
 
