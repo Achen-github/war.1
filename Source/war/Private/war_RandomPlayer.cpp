@@ -40,7 +40,7 @@ void Awar_RandomPlayer::OnTurn()
     {
         GameInstance->SetTurnMessage(TEXT("AI (Random) Turn"));
     }
-    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Turn"));
+    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Turn"));
 
     FTimerHandle TimerHandle;
     GetWorld()->GetTimerManager().SetTimer(TimerHandle, [this]()
@@ -101,13 +101,13 @@ void Awar_RandomPlayer::OnTurn()
 
 void Awar_RandomPlayer::OnWin()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Wins!"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Wins!"));
 	GameInstance->SetTurnMessage(TEXT("AI Wins!"));
 }
 
 void Awar_RandomPlayer::OnLose()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Loses!"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("AI (Random) Loses!"));
 	// GameInstance->SetTurnMessage(TEXT("AI Loses!"));
 }
 void Awar_RandomPlayer::MoveNextAIUnit(Awar_GameMode* GameMode, const TArray<ABaseUnit*>& Units, int32 Index)
